@@ -1,32 +1,64 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app id="inspire" >
+  <v-card
+      color="grey lighten-4"
+      flat
+      height="100%"
+      tile
+    >
+      <toolbar />
+      <router-view />
+    </v-card>
+  </v-app>
 </template>
 
+<script>
+
+import Toolbar from './components/core/Toolbar';
+
+export default {
+  components: {
+    Toolbar
+  },
+  data() {
+    return {
+
+    }
+  }
+}
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.toolbar-nav-icon {
+  background-color:#4e97c2 !important; 
+  border-radius:5% !important; 
+  height:80% !important;
 }
 
-#nav {
-  padding: 30px;
+.toolbar-nav-icon.icon{
+    width: 38px !important;
+  }
+
+.Header-text {
+  font-style: italic;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+ .v-text-field .v-input__control .v-input__slot {
+    min-height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+
+  html {
+  overflow: hidden !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 </style>
