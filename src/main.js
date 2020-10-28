@@ -6,6 +6,10 @@ import store from "./store";
 
 import vuetify from './plugins/vuetify'; // path to vuetify export
 
+import vueKanban from 'vue-kanban'
+
+Vue.use(vueKanban)
+
 Vue.config.productionTip = false;
 
 new Vue({
