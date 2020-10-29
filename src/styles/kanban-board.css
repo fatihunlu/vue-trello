@@ -1,7 +1,7 @@
 ul.drag-list, ul.drag-inner-list {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px !important;
   }
   
   .drag-container {
@@ -23,7 +23,7 @@ ul.drag-list, ul.drag-inner-list {
     flex: 1;
     margin: 0 10px;
     position: relative;
-    background: rgba(0, 0, 0, 0.2);
+    background: #ebecf0;
     overflow: hidden;
   }
   @media (max-width: 690px) {
@@ -51,15 +51,20 @@ ul.drag-list, ul.drag-inner-list {
   }
   
   .drag-item {
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    border-radius: 6px;
+    color: black;
     padding: 10px;
     margin: 10px;
-    height: 100px;
-    background: rgba(0, 0, 0, 0.4);
+    background: white;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
   }
   .drag-item.is-moving {
-    transform: scale(1.5);
-    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1);
+    -ms-transform: rotate(5deg); /* IE 9 */
+    transform: rotate(5deg);
+    background: white;
   }
   
   .drag-header-more {
@@ -116,6 +121,6 @@ ul.drag-list, ul.drag-inner-list {
   }
   
   .gu-transit {
-    opacity: 0.2;
+    opacity: 0;
   }
   

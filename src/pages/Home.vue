@@ -63,7 +63,7 @@ export default {
 
   methods: {
     goToBoard(item) {
-      console.log('item: ', item);
+      this.$router.push({ name: 'Board', params: { id: item.id } });
     }
   },
 }
@@ -142,6 +142,10 @@ list-style: none;
   text-decoration: none;
   color: black !important;
   font-weight: 700;
+}
+
+.std-links:hover {
+  background-color: rgba(9,30,66,.08);
 }
 
 .std-links-active {

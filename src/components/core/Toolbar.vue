@@ -1,7 +1,7 @@
 <template>
     <v-toolbar height="40" dense color="#026aa7">
         <v-app-bar-nav-icon 
-            class="white--text toolbar-nav-icon icon"> 
+            class="white--text toolbar-nav-icon icon" @click="$router.push({ name: 'Home' })"> 
             <v-icon
             dark
             size="20px"
@@ -10,7 +10,7 @@
             </v-icon>
         </v-app-bar-nav-icon>
         <v-app-bar-nav-icon 
-            class="white--text ma-1 toolbar-nav-icon icon"> 
+            class="white--text ma-1 toolbar-nav-icon icon" @click="$router.push({ name: 'Home' })"> 
             <v-icon
             size="20px"
             dark
