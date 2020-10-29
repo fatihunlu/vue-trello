@@ -41,3 +41,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### How can I support developers?
+- Star my GitHub repo :star:
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+
+## License
+
+[MIT](https://github.com/fatihunlu/vue-trello/blob/master/LICENSE) license. 
+
+Copyright (c) 2018-present fatihunlu
