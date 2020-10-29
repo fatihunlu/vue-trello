@@ -9,8 +9,15 @@ Vue-trello is an example of Trello based on Vue.js with Vuetify.
 ## Demo
 [Live Demo](https://fatihunlu.github.io/vue-trello/)
 
-## Preview
+### Reference
 
+* [Vue.js](https://vuejs.org/)
+* [Vuetifyjs](https://vuetifyjs.com/)
+* [vue-kanban](https://github.com/BrockReece/vue-kanban)
+
+## Preview
+![Preview](https://github.com/fatihunlu/vue-trello/blob/develop/static/screen1.PNG)
+![Preview](https://github.com/fatihunlu/vue-trello/blob/develop/static/screen2.PNG)
 
 ## Project setup
 ```
