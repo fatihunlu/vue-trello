@@ -181,7 +181,6 @@ export default {
           }
         }
 
-        console.log('vm.blocks: ', vm.blocks);
         return;
       },
 
@@ -192,12 +191,13 @@ export default {
 
     computed: {
       modifiedBlocks() {
-        
-        return this.blocks.map(x => ({
+        const blocks = this.blocks.map(x => ({
           id: x.id,
           status: "status-" + x.status,
           title: x.title
         }));
+
+        return blocks; 
       }
     }
 }

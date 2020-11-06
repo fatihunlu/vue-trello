@@ -11,6 +11,9 @@
         <li>
           <a class="std-links"> <v-icon style="padding-right:5px;"> mdi-home </v-icon> Home </a>
         </li>
+        <li class="add-new-board-link">
+          <a class="std-links"> <v-icon style="padding-right:5px; " size="30"> mdi-plus </v-icon> Create team </a>
+        </li>
       </ul>
     </div>
     <div class="boards">
@@ -151,6 +154,12 @@ list-style: none;
 .std-links-active {
     background-color: #e4f0f6;
     color: #0079bf !important;
+}
+
+.add-new-board-link {
+    margin-top:20px; 
+    /* background-color: rgba(9,30,66,.08);  */
+    border-radius:5px;
 }
 
 </style>
